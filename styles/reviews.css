@@ -1,0 +1,218 @@
+.reviews_container {
+    padding: 60px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    /* height: 200px; */
+    margin: auto 0;
+    /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+    user-select: none;
+    /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+    touch-action: pan-y;
+    justify-content: center;
+    align-items: center;
+}
+  
+.slider-list {
+    width: 900px;
+    overflow: hidden;
+}
+
+.slider-list.grab {
+    cursor: grab;
+}
+
+.slider-list.grabbing{
+    cursor: grabbing;
+}
+
+.slider-track {
+    display: flex;
+}
+
+.slide {
+    width: 444px;
+    height: 444px;
+    /* Чтобы слайды не сжимались */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+ .reviews_container .review {
+    padding: 44px;
+    border: 8px solid #F1EFE6;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.reviews_container .review_name {
+    font-weight: bold;
+    padding: 35px;
+    padding-right: 0px;
+    font-size: 1.8rem;
+}
+
+.review_text_container {
+    height: 100%;
+    justify-content: space-between;
+}
+
+.reviews_container .review_text {
+    margin-top: 30px;
+    font-size: 1.6rem;
+}
+
+.reviews_container img {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    pointer-events: none;
+    object-fit: cover;
+}
+
+.reviews_container .review_data {
+    color: #515151;
+    font-size: 1.8rem;
+    text-align: right;
+    margin-top: 18px;
+} 
+
+.slider-arrows {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.next,
+.prev {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    width: 32px;
+    height: 60px;
+}
+
+.next:active, 
+.next:focus,
+.prev:active, 
+.prev:focus { 
+      outline: none; 
+}
+
+.next {
+    background: url(../images/next.png);
+}
+
+.prev {
+    background: url(../images/prev.png);
+}
+
+.next.disabled,
+.prev.disabled {
+    opacity: .25;
+    pointer-events: none;
+}
+
+.reviews_container #add_review {
+    background: transparent;
+    border: 5px solid #E56ABB;
+    color: #E56ABB;
+    text-transform: uppercase;
+    width: 350px;
+    height: 75px;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    border-radius: 10px;
+    margin: 65px auto 0 auto;
+    transition: background linear 0.2s;
+}
+
+.reviews_container #add_review span:first-child {
+    border: 1px solid #E56ABB;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    width: 23px;
+    margin-right: 17px;
+    display: inline-block;
+    line-height: 19px;
+}
+
+.reviews_container #add_review:hover {
+    background:  #E56ABB;
+    color: #fff;
+}
+
+.reviews_container #add_review:hover  span:first-child {
+    border-color: #fff;
+}
+ 
+
+/* modal */
+.modal:before {
+  content: "";
+  display: none;
+  background: rgb(230,0,35,0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.opened:before {
+  display: block;
+}
+.opened .modal-dialog {
+  transform: translate(0, 0);
+  top: 20%;
+}
+.modal-dialog {
+  background: #fefefe;
+  border: #333333 solid 0px;
+  border-radius: 5px;
+  margin-left: -200px;
+  text-align:center;
+  position: fixed;
+  left: 50%;
+  top: -100%;
+  z-index: 11;
+  width: 450px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.3);
+  transform: translate(0, -500%);
+  transition: transform 0.3s ease-out;
+}
+.modal-body {
+  padding: 20px;
+}
+.modal-body input{
+  width:200px;
+  padding:8px;
+  border:1px solid #ddd;
+  color:#888;
+  outline:0;
+  font-size:14px;
+  font-weight:bold;
+  margin-top: 10px;
+}
+.modal-header,
+.modal-footer {
+  padding: 10px 20px;
+}
+.modal-header {
+  border-bottom: #eeeeee solid 1px;
+}
+.modal-header h2 {
+  font-size: 20px;
+}
+.slider-arrows-mobile {
+    font-size: 2rem;
+    color: gray;
+    text-align: center;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}

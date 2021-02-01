@@ -1,0 +1,41 @@
+footer {
+    padding: 25px;
+    border-top: 3px solid #137893;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.we_social {
+    align-items: center;
+    margin: auto;
+}
+
+.we_social p {
+    font-size: 2.4rem;
+    color: #137893;
+    margin-bottom: 17px;
+}
+
+.we_social div a {
+    background: #137893;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 3.6rem;
+    margin: 0px 29px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding-top: 4px;
+    transition: background linear 0.2s;
+}
+
+.we_social div a:hover {
+    background: blue;
+}
+
+.development_info {
+    font-size: 1.4rem;
+    color: #137893;
+    text-align: center;
+    justify-content: flex-end;
+}

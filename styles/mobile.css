@@ -1,0 +1,497 @@
+
+
+@media screen and (max-width: 1200px) {
+    .numbers_info img {
+        width: 90%;
+    }
+    .reviews_container {
+        padding: 60px 30px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .days_image, .article_info {
+        width: 356px;
+        margin: 10px auto;
+    }
+    .article_line {
+        height: 210px;
+    }
+    .reviews_container {
+        padding: 60px 10px;
+    }
+    /* .slider-list {
+        width: 445px; 
+    }
+    .slide {
+        width: 100%;
+    } */
+    .slider-list {
+        width: 800px;
+    }
+    .slide {
+        width: 400px;
+    }
+    .reviews_container .review {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .reservation_container .reservation_bonus {
+        margin-right: 40px;
+    }
+    .we_social div a {
+        margin: 0px 15px;
+    }
+    #map_image {
+        width: 49%;
+    }
+    main .numbers_info #about_us_numbers .procents .div_procent:first-child {
+        margin-right: 60px;
+    }
+    .procents {
+        margin-left: -283px;
+    }
+    main .numbers_info #about_us_numbers .procents {
+        max-width: 570px;
+    }
+
+}
+
+
+@media screen and (max-width: 940px) {
+    header {
+        padding: 0 8%;
+    }    
+    .info {
+        font-size: 1.6rem;
+    }
+    .address {
+        margin-right: 0px;
+    }
+    .include .include_items {
+        flex-direction: column;
+    }
+    #program {
+        padding: 15px;
+        padding-top: 60px;
+    }
+    div.articles_holder div:nth-child(2) {
+        margin: 0 46px;
+    }
+    .reservation_button_container {
+        width: 95%;
+    }
+    .with_us_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .with_us {
+        padding: 60px 15px;
+    }
+    .with_us_info {
+        width: 452px;
+        margin: 20px 0;
+    }
+    .reservation_container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .reservation_bonus {
+        flex-direction: row;
+        align-items: center;
+        margin: 30px 40px;
+
+    }
+    .reservation_container .reservation_bonus .reservation_img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 0;
+    }
+    .reservation_container .reservation_form {
+        margin: 40px 0;
+    }
+
+    .slider-list {
+        width: 445px; 
+    }
+    .slide {
+        width: 100%;
+    }
+
+    .contacts_container {
+        flex-direction: column-reverse;
+    }
+    .contacts_container .contacts {
+        padding: 20px;
+    }
+    .contacts_container .contacts .address {
+        flex-direction: row;
+        align-items: baseline;
+        margin: auto;
+    }
+    .address_first {
+        width: 338px;
+        margin-right: 60px;
+    }
+    .address_second {
+        width: 310px;
+    }
+    .contacts_container .map_container {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .contacts_container .contacts h2 {
+        margin-left: 0px;
+    }
+    .we_social div a {
+        padding-top: 1px;
+        width: 30px;
+        height: 30px;
+        font-size: 2.6rem;
+    }
+    #map_image {
+        display: none;
+    }
+    .first_numbers {
+        width: -webkit-fill-available;
+    }
+    main .numbers_info #about_us_numbers .procents {
+        margin-left: 0;
+        flex-direction: column;
+        padding-top: 0;
+        justify-content: center;
+    }
+    main .numbers_info #about_us_numbers .procents .div_procent {
+        width: auto;
+    }
+    main .numbers_info #about_us_numbers .procents .div_procent:first-child {
+         margin-right: 0px; 
+         margin-bottom: 30px;
+    }
+    #about_us_numbers {
+        flex-direction: row;
+    }
+    /* footer .logo_image {
+        width: 200px;
+    } */
+}
+
+@media screen and (max-width: 875px) {
+    main .numbers_info #about_us_numbers {
+        flex-direction: column;
+    }
+    main .numbers_info #about_us_numbers .procents .div_procent:first-child {
+        margin-bottom: 10px;
+        margin-top: 46px;
+    }
+    .article {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 0 50px 0;
+    }
+    .article .article_info p{
+        width: 356px;
+        padding: 0;
+    }
+    .article_line {
+        display: none;
+    } 
+    article div:first-child p:last-child {
+        margin: 20px auto;
+    }
+    .days_image, .article_info {
+        width: 446px;
+    }
+    article div:first-child p:first-child {
+        margin: 10px auto;
+    }
+    #program {
+        height: 3500px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    header {
+        height: 95px;
+        padding: 0 35px;
+        position: sticky;
+    /* overflow: hidden; */
+        top: 0;
+        z-index: 90;
+    }
+    .logo {
+        margin-top: 14px;
+    }
+    .logo_image {
+        width: 190px;
+        margin-bottom: 10px;
+    }
+    menu {
+        display: none;
+        position: fixed;
+        top: 95px;
+        height: 208px;
+        left: 0;
+        overflow: hidden;
+        z-index: 100;
+    }
+    .mountains .menu_ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .mountains .menu_ul li{
+        margin: 5px 0;
+    }
+    .info{
+        display: none;
+    }
+    #menu_icon_container{
+        display: block;
+    }
+    .mountains {
+        padding: 15px;
+    }
+    .mountains h1 {
+        font-size: 6.3rem;
+    }
+    .mountains h2 {
+        font-size: 2.6rem;
+    }
+    .mountains .place_and_date {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts_container .contacts .address {
+        flex-direction: column;
+    }
+    .address_first, .address_second {
+        margin-right: 0;
+    }
+    .we_social div a {
+        margin: 0px 5px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer div {
+        margin: 10px 0;
+    }
+    .footer .we_social p {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .info {
+        flex-direction: column;
+        align-items: baseline;
+        margin-top: 10px;
+    }
+
+    .phone {
+        margin-top: 8px;
+    }
+    .mountains h1 {
+        font-size: 5.3rem;
+    }
+    .slider-arrows {
+        display: none;
+    }
+    .reservation {
+        font-size: 1.8rem;
+        width: 260px;
+        height: 60px;
+    }
+    .form form {
+        text-align: center;
+    }
+    .reservation_container .reservation_form button {
+        margin: 52px auto 0 auto;
+    }
+    .reservation_bonus {
+        flex-direction: column;
+    }
+    .slider-arrows-mobile {
+        display: flex;
+    }
+    #review-form {
+        width: 90%;
+    }
+    #name_first_last {
+        flex-direction: column;
+    }
+    #review-form div .lastname_margin {
+        margin-left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 555px) {
+    .mountains h1 {
+        font-size: 5rem;
+    }
+    .mountains h2 {
+        font-size: 1.9rem;
+    } 
+    .mountains .place_and_date {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile_include {
+        flex-direction: column;
+    }
+    .with_us_info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .with_us .with_us_name {
+        margin-left: 0px; 
+        text-align: center;
+    }
+    main .numbers_info {
+        justify-content: center;
+        padding: 20px;
+    }
+    .first_numbers div {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;   
+        border-radius: 15px;
+        border: 3px solid #137893;
+        padding: 10px;
+    }
+    main .numbers_info #about_us_numbers .procents {
+        align-items: center;
+    }
+    main .numbers_info #about_us_numbers .procents .div_procent {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    main .numbers_info #about_us_numbers {
+        width: 82%;
+    }
+    main .numbers_info #about_us_numbers .procents p {
+        margin-left: 0;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    main .numbers_info #about_us_numbers .first_numbers div p:first-child {
+        text-align: center;
+    }
+    main .numbers_info #about_us_numbers .first_numbers div p:last-child {
+        margin-left: 0;
+        text-align: center;
+    }
+    canvas {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .days_image, .article_info {
+        width: 356px;
+    }
+    .reservation-form-container {
+        width: 90%;
+    }
+    #close_reserv_modal {
+        margin-left: 40%;
+    }
+    .reservation-form-container .reservation_place_and_date {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    #close_reserv_modal {
+        margin-top: -122px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .mountains .place_and_date {
+        font-size: 1.7rem;
+    }
+    .mountains h1 {
+        font-size: 3.9rem;
+    }
+    .with_us_info {
+        width: 100%;
+    }
+    .reservation_container .reservation_form {
+        width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0 20px;
+    }
+    .logo_image {
+        width: 144px;
+    }
+    .phone .phone_text,
+    .address .address_text {
+        width: 147px;
+        width: fit-content;
+    }
+    .mountains h2 {
+        line-height: 10px;
+        margin-bottom: 45px;
+    }
+    .contacts_container .contacts i {
+        width: 70px;
+        height: 70px;
+        padding: 4px 0;
+    }
+    .contacts_container .contacts .address .address_text {
+        padding: 15px;
+    }
+    /*test reviews */
+    .slider-track {
+        min-width: 358px;
+    }
+    .slide {
+        width: 100%;
+        height: fit-content;
+    }
+    .reviews_container .review {
+        width: 90%;
+        height: fit-content;
+        padding: 15px;
+    }
+    .reviews_container img {
+        width: 125px;
+        height: 125px;
+    }
+    .reviews_container #add_review {
+        width: 80%;
+    }
+    /* .reviews_container .review_name {
+        padding: 15px;
+    } */
+}
+
+@media screen and (max-width: 425px) {
+    .reservation_place_and_date {
+        flex-direction: column;
+        align-items: center;
+    }
+    .reservation_form  .reservation_place_and_date p{
+        margin-bottom: 0px;
+    }
+    .reservation_title_1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mountains .place_and_date {
+        font-size: 1.3rem;
+    }
+}

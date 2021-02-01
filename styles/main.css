@@ -1,0 +1,129 @@
+main .numbers_info {
+    justify-content: center;
+    padding: 66px 60px 60px;
+    /* padding-bottom: 52px;
+    padding-right: 60px;
+    padding-left: 60px; */
+}
+
+main .numbers_info img{
+    margin-right: 60px;
+}
+
+main .numbers_info #about_us_numbers .first_numbers div p:first-child {
+  font-size: 30px;
+  color: #137893;
+  font-weight: bold;
+  text-align: right;
+  line-height: 44px;
+  width: 108px;
+}
+
+/* main .numbers_info #about_us_numbers div:first-child {
+    font-size: 30px;
+    color: #137893;
+    font-weight: bold;
+    text-align: right;
+    line-height: 44px;
+} */
+
+main .numbers_info #about_us_numbers .first_numbers div p:last-child {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+  line-height: 44px;
+  margin-left: 21px;
+  text-align: left;
+}
+
+/* main .numbers_info #about_us_numbers div:last-child {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 44px;
+    margin-left: 21px;
+    text-align: left;
+} */
+
+main .numbers_info #about_us_numbers  .procents {
+  max-width: 435px;
+  padding-top: 30px;
+}
+
+main .numbers_info #about_us_numbers .procents .div_procent {
+  width: 50%;
+  align-items: center;
+}
+
+main .numbers_info #about_us_numbers .procents p{
+  font-size: 1.8rem;
+  color: #000000;
+  font-weight: normal;
+  text-align: left;
+  line-height: normal;
+  margin-left: -24px;
+}
+
+main .numbers_info #about_us_numbers .procents .div_procent:first-child{
+  margin-right: 20px;
+}
+
+canvas {
+  width: 126px;
+  height: 63px;
+  margin-left: -50px;
+}
+
+  .include {
+      text-align: center;
+      /* background: #F1EFE6; */
+      background: rgba(241, 238, 230, 0.5);
+      padding: 63px;
+  }
+
+  h2 {
+    font-size: 36px;
+    letter-spacing: 4px;
+    color: #e56abb;
+    font-weight: bold;
+    margin-bottom: 64px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 6px;
+  }
+
+  .include .include_items {
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .include .include_items .include_img {
+      padding: 0 20px;
+  }
+
+.include .include_items .include_img div {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #137893 url(../images/circle_icon.png) center center no-repeat;
+    display: flex;
+    margin: 22px auto;
+    transition: background-color linear 0.2s;
+}
+
+.include .include_items .include_img div:hover {
+    background-color: #3491A9;
+}
+
+.include .include_items div img {
+    margin: auto;
+    display: block;
+}
+
+.include .include_items div p {
+    font-size: 23px;
+    letter-spacing: 1px;
+    color: #137893;
+    text-align: center;
+}

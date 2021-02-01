@@ -1,0 +1,151 @@
+.reservation_container {
+    padding: 60px;
+    background: #137893;
+    justify-content: center;
+}
+
+.reservation_container .reservation_bonus {
+    align-items: center;
+    margin-right: 112px;
+    justify-content: center;
+}
+
+.reservation_container .reservation_bonus .reservation_img {
+    width: 257px;
+    height: 257px;
+    border-radius: 50%;
+    background: url(../images/bonus.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 62px;
+}
+
+.reservation_container .reservation_bonus p {
+    font-size: 2.8rem;
+    color: #fff;
+    width: 400px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.reservation_container .reservation_bonus p span{
+    font-weight: bold;
+}
+
+.reservation_container .reservation_bonus p #bonus_procent{
+    font-size: 3.6rem;
+}
+
+ .reservation_form {
+    align-items: center;
+    width: 446px;
+}
+
+ .reservation_form p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+ .reservation_form .reservation_title_1 {
+    font-size: 3.3rem;
+    
+}
+ .reservation_form .reservation_title_2 {
+    font-size: 2.5rem;
+}
+
+#small_calendar {
+    width: 17px;
+    height: 17px;
+    margin-top: 4px;
+}
+
+#small_mountains {
+    width: 38px;
+    height: 22px;
+    margin-left: 24px;
+}
+
+ .reservation_form .reservation_place_and_date p {
+    padding: 7px
+}
+
+ .reservation_form .form input{
+    width: 100%;
+    height: 56px;
+    color: #919191;
+    font-size: 1.8rem;
+    padding: 0 35px;
+    margin: 19px 0;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+ .reservation_form button {
+    margin: 52px 52px 0 52px;
+    
+}
+
+.reservation-form-container {
+    width: 500px;
+    height: fit-content;
+    padding: 36px;
+    background-color:  #137893;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#reserve {
+    margin: 15px 0 0 0;
+    /* margin-bottom: 0px; */
+}
+
+.reservation-form-container .reservation_place_and_date {
+    justify-content: center;
+}
+
+#close_reserv_modal {
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 217px;
+    font-size: 2rem;
+    color: #fff;
+    transition: color linear 0.2s;
+}
+
+#close_reserv_modal:hover {
+  color: #ce4da2;
+}
+
+#confirm-modal .confirm-modal-container{
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid #137893;
+}
+#confirm-modal .confirm-modal-container img{
+    margin-bottom: 30px;
+    width: 200px;
+}
+#confirm-modal .confirm-modal-container i {
+    color: #137893;
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 86px;
+    font-size: 2rem;
+    transition: color linear 0.2s;
+}
+
+#confirm-modal .confirm-modal-container i:hover {
+    color: #ce4da2;
+}
+
+#confirm-modal .confirm-modal-container p {
+    color: #137893;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: none;
+}
