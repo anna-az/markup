@@ -4,6 +4,7 @@
 
 html {
     font-size: 10px;
+    font-family: 'MyriadProRegular';
 }
 
 body {
@@ -62,7 +63,7 @@ p {
 } */
 
 .address .address_text {
-    width: 147px;
+    width: 150px;
 }
 
 /* .phone img {
