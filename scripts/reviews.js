@@ -103,13 +103,8 @@ function openModalReview() {
       if (files) {
           var fr = new FileReader();
           fr.addEventListener('load', function() {
-              // document.querySelector('#img_container').style.backgroundImage = "url(" + fr.result + ")";
               document.querySelector('#img_container').setAttribute('src', fr.result);
-              // console.log(fr.result);
-              // console.log(img);
-              // img = fr.result;
               document.querySelector('#img_container').style.display ="block";
-          // img = fr.result;
           }, false);
           fr.readAsDataURL(this.files[0]);
       }
@@ -135,7 +130,6 @@ function sendReviewData(event) {
   for(let element of this.querySelectorAll('[name]')) {
     student[ element.getAttribute('name') ] = element.value;
   }
-  // student.img = document.querySelector('#img_container').style.backgroundImage;
   student.img = document.querySelector('#img_container').getAttribute('src');
   console.log(student);
   student.name = `${student.firstname} ${student.lastname}`;
@@ -165,7 +159,6 @@ function sendReviewData(event) {
 }
 
 
-//-------------------
 
 function slider() {
   let slider = document.querySelector('.slider'),
@@ -174,10 +167,8 @@ function slider() {
   sliderTrack = slider.querySelector('.slider-track'),
   slides = slider.querySelectorAll('.slide'),
   arrows = slider.querySelectorAll('.slider-arrows'),
-  //prev = arrows.children[0],
-  //next = arrows.children[1],
-  prev = slider.querySelector('.prev'),//arrows[0],
-  next = slider.querySelector('.next'),//arrows[1],
+  prev = slider.querySelector('.prev'),
+  next = slider.querySelector('.next'),
   slideWidth = slides[0].offsetWidth,
   slideIndex = 0,
   posInit = 0,
@@ -231,7 +222,7 @@ function slider() {
     posX1 = evt.clientX;
     posY2 = posY1 - evt.clientY;
     posY1 = evt.clientY;
-    // определение действия свайп или скролл
+
     if (!isSwipe && !isScroll) {
       let posY = Math.abs(posY2);
       if (posY > 7 || posX2 === 0) {
@@ -242,7 +233,6 @@ function slider() {
       }
     }
     if (isSwipe) {
-      // запрет ухода влево на первом слайде
       if (slideIndex === 0) {
         if (posInit < posX1) {
           setTransform(transform, 0);
@@ -251,7 +241,7 @@ function slider() {
           allowSwipe = true;
         }
       }
-      // запрет ухода вправо на последнем слайде
+
       if (slideIndex === slides.length -sl) {
         if (posInit > posX1) {
           setTransform(transform, lastTrf);
@@ -260,12 +250,12 @@ function slider() {
           allowSwipe = true;
         }
       }
-      // запрет протаскивания дальше одного слайда
+
       if (posInit > posX1 && transform < nextTrf || posInit < posX1 && transform > prevTrf) {
         reachEdge();
         return;
       }
-      // двигаем слайд
+
       sliderTrack.style.transform = `translate3d(${transform - posX2}px, 0px, 0px)`;
     }
   },
@@ -316,18 +306,6 @@ sliderTrack.addEventListener('transitionend', () => allowSwipe = true);
 slider.addEventListener('touchstart', swipeStart);
 slider.addEventListener('mousedown', swipeStart);
 
-// arrows.addEventListener('click', function() {
-//   let target = event.target;
-//   if (target.classList.contains('next')) {
-//     slideIndex++;
-//   } else if (target.classList.contains('prev')) {
-//     slideIndex--;
-//   } else {
-//     return;
-//   }
-//   slide();
-// });
-
 next.addEventListener('click',  nextSl);
 
 prev.addEventListener('click', prevSl);
@@ -353,4 +331,3 @@ function nextSl(event) {
   slide();
 }
 
-// let sl = document.querySelector('.slider-list').offsetWidth <= 445 ? 1 : 2

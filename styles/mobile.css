@@ -20,12 +20,6 @@
     .reviews_container {
         padding: 60px 10px;
     }
-    /* .slider-list {
-        width: 445px; 
-    }
-    .slide {
-        width: 100%;
-    } */
     .slider-list {
         width: 800px;
     }
@@ -173,9 +167,6 @@
     #about_us_numbers {
         flex-direction: row;
     }
-    /* footer .logo_image {
-        width: 200px;
-    } */
 }
 
 @media screen and (max-width: 875px) {
@@ -217,7 +208,6 @@
         height: 95px;
         padding: 0 35px;
         position: sticky;
-    /* overflow: hidden; */
         top: 0;
         z-index: 90;
     }
@@ -452,7 +442,6 @@
     .contacts_container .contacts .address .address_text {
         padding: 15px;
     }
-    /*test reviews */
     .slider-track {
         min-width: 358px;
     }
@@ -472,9 +461,6 @@
     .reviews_container #add_review {
         width: 80%;
     }
-    /* .reviews_container .review_name {
-        padding: 15px;
-    } */
 }
 
 @media screen and (max-width: 425px) {

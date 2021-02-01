@@ -1,9 +1,6 @@
 main .numbers_info {
     justify-content: center;
     padding: 66px 60px 60px;
-    /* padding-bottom: 52px;
-    padding-right: 60px;
-    padding-left: 60px; */
 }
 
 main .numbers_info img{
@@ -19,14 +16,6 @@ main .numbers_info #about_us_numbers .first_numbers div p:first-child {
   width: 108px;
 }
 
-/* main .numbers_info #about_us_numbers div:first-child {
-    font-size: 30px;
-    color: #137893;
-    font-weight: bold;
-    text-align: right;
-    line-height: 44px;
-} */
-
 main .numbers_info #about_us_numbers .first_numbers div p:last-child {
   font-size: 18px;
   color: #000000;
@@ -35,15 +24,6 @@ main .numbers_info #about_us_numbers .first_numbers div p:last-child {
   margin-left: 21px;
   text-align: left;
 }
-
-/* main .numbers_info #about_us_numbers div:last-child {
-    font-size: 18px;
-    color: #000000;
-    font-weight: bold;
-    line-height: 44px;
-    margin-left: 21px;
-    text-align: left;
-} */
 
 main .numbers_info #about_us_numbers  .procents {
   max-width: 435px;
@@ -76,7 +56,6 @@ canvas {
 
   .include {
       text-align: center;
-      /* background: #F1EFE6; */
       background: rgba(241, 238, 230, 0.5);
       padding: 63px;
   }

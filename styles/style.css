@@ -12,10 +12,6 @@ body {
 }
 
 header {
-    /* position: fixed;
-    right: 0;
-    left: 0;
-    top: 0; */
     padding: 0 10%;
     justify-content: space-between;
     align-items: center;
@@ -56,21 +52,11 @@ p {
     font-size: 4.5rem;
     margin: auto 9px;
   }
-/* .address img {
-    width: 32px;
-    height: 42px;
-    margin: 0 9px;
-} */
 
 .address .address_text {
     width: 150px;
 }
 
-/* .phone img {
-    width: 23px;
-    height: 38px;
-    margin: 4px 9px;
-} */
 .phone i {
     font-size: 5rem;
     margin: 4px 9px;
@@ -80,18 +66,12 @@ p {
     width: 126px;
     margin: auto;
 }
-/* .address {
-    color: #137893;
-    font-size: 1.9rem;
-} */
+
 
  #menu_icon_container{
     display: none;
 }
-/*
-#menu_icon_container:hover {
-    color: #E56ABB;
-} */
+
 .menu_mobile_container {
     display: none;
     position: fixed;
@@ -177,7 +157,6 @@ p {
     transition-property: bottom, transform;
   }
    
-  /* состояние active при открытом меню  */
   .c-hamburger--htx.is-active {
     background-color: transparent;
   }

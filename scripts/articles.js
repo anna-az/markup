@@ -44,9 +44,14 @@ let articles_items = [
     }
 ];
 
-function createArticles(items) {
+let program = document.querySelector('#program');
+let program_button = document.querySelector('.reservation');
+
+
+function createArticles(items, number) {
     let container = document.createElement('div');
     container.setAttribute('class', 'articles_holder flex_col');
+    container.setAttribute('data-id', number);
     let html = `<p class="day">${items.day}</p>
         <article class="flex_row article">
             <div class="article_info">
@@ -56,13 +61,16 @@ function createArticles(items) {
             <div class="article_line"></div>
             <div class="img_container">
                 <img src="${items.first_image}" class="days_image main_img">
-                <img src="${items.second_image}" class="days_image ">
+                
             </div>
         </article>`;
 
+
     let inner = document.querySelector('.articles_container');
     container.innerHTML = html;
+    container.style.display = 'none';
     inner.appendChild(container);
+    
 
     var imgFirst = document.querySelector(`[src="${items.first_image}"]`);
     var imgSecond = document.querySelector(`[src="${items.first_image}"]`);
@@ -93,5 +101,53 @@ function createArticles(items) {
     }
 
 }
-articles_items.forEach( item => createArticles(item));
+addArticle(articles_items[0], 0);
+
+
+
+function addArticle(item, index) {
+    var lastElem = (index === 0) ? document.querySelector(`[name = "program"]`): document.querySelector(`[data-id = "${index-1}"]`);
+    var isHidden = true;
+    
+    window.addEventListener('scroll', displayArticle)
+    function displayArticle(event) {
+       var elemPos = lastElem.getBoundingClientRect();
+       var scrollToElem = elemPos.y + elemPos.height + 200;
+       var windowHeight = document.documentElement.clientHeight;
+       if(windowHeight > scrollToElem) {
+           if(!isHidden) return;
+           isHidden = false;
+           createArticles(item, index);
+            let i = 0;
+            let art = document.querySelector(`[data-id = "${index}"]`);
+            art.style = "display: flex; height: 0px";
+            
+            let interval = setInterval(function() {
+                if(i > 422) {
+                    clearInterval(interval);
+                    art.style.height = '423px';
+                    art.style = "display: flex";
+                    
+                    if(index < articles_items.length - 1) addArticle(articles_items[index+1], index+1);
+                
+                    let img_cont = art.querySelector('.img_container');
+                    let img = document.createElement('img');
+                    img.setAttribute('src', item.second_image);
+                    img.classList.add('days_image');
+
+                    main_img = art.querySelector('.main_img');
+                    main_img.style.position = "absolute";
+
+                    img_cont.appendChild(img);
+                        
+                } else {
+                    art.style.height = i+'px';
+                    i+=5; 
+                }
+                
+            }, 5);
+       } 
+    }
+    
+}
 

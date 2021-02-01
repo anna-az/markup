@@ -2,11 +2,6 @@ const button = document.querySelector('#menu_icon_container');
 const menu = document.querySelector('.menu');
 button.addEventListener('click', checkMenu);
 
-window.addEventListener('resize', event => {
-    // console.log(event);
-  }, false);
-
-
 (function() {
     var toggles = document.querySelectorAll(".c-hamburger");
 
@@ -38,7 +33,6 @@ function showMenu() {
     const menu_html = document.querySelector('.menu_ul');
 
     const menu = document.querySelector('.menu');
-    // menu.innerHTML = menu_html;
     menu.style.height = 0;
     menu.style.display = 'block';
     menu.classList.toggle('active-mobile-menu');

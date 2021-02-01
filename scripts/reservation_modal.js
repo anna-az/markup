@@ -83,7 +83,6 @@ function confirmationWindow(name, text) {
     const divNode = document.createElement('div');
     divNode.classList.add('confirm-modal-container');
 
-    //<i class="fa fa-times" aria-hidden="true" id="close_reserv_modal"></i>
     const close = document.createElement('i');
     close.classList.add('fa', 'fa-times');
     close.setAttribute('aria-hidde', 'true');
