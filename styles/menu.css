@@ -25,7 +25,7 @@ menu ul li{
 menu a{
     text-decoration: none;
     color: #fff;
-    font-family: "M. Video"; /*?*/
+    font-family: 'MyriadProRegular';
     /* transition: color linear 0.3s; */
     font-size: 1.8rem;
     transition: color linear 0.2s;
