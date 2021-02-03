@@ -3,10 +3,10 @@ const menu = document.querySelector('.menu');
 button.addEventListener('click', checkMenu);
 
 (function() {
-    var toggles = document.querySelectorAll(".c-hamburger");
+    const toggles = document.querySelectorAll(".c-hamburger");
 
-    for (var i = toggles.length - 1; i >= 0; i--) {
-      var toggle = toggles[i];
+    for (let i = toggles.length - 1; i >= 0; i--) {
+      let toggle = toggles[i];
       toggleHandler(toggle);
     };
    

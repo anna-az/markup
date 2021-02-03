@@ -1,6 +1,6 @@
 function drawProgress(number, id) {
-    var canvas = document.getElementById(id);
-    var ctx = canvas.getContext("2d");
+    const canvas = document.getElementById(id);
+    const ctx = canvas.getContext("2d");
 
     for(let i = 1; i <= number; i++) {
         (function(i) {
@@ -27,20 +27,19 @@ function drawProgress(number, id) {
                 ctx.beginPath();
                 ctx.fillText(i+'%', 150, 90);
                 ctx.fill();
-                ctx.stroke(); 
-                                
-            }, i*20);
+                ctx.stroke();            
+            }, i*40);
         } (i));
     }
 }
 
-var lastElem = document.querySelector('.div_procent');
-var isHidden = true;
+const lastElem = document.querySelector('.div_procent');
+let isHidden = true;
 window.addEventListener('scroll', displayArticle)
 function displayArticle(event) {
-    var elemPos = lastElem.getBoundingClientRect();
-    var scrollToElem = elemPos.y + 100;
-    var windowHeight = document.documentElement.clientHeight;
+    const elemPos = lastElem.getBoundingClientRect();
+    const scrollToElem = elemPos.y + 100;
+    const windowHeight = document.documentElement.clientHeight;
     if(windowHeight > scrollToElem) {
         if(!isHidden) return;
         isHidden = false;
